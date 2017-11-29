@@ -1,0 +1,17 @@
+board name=bounce
+
+# define a ball
+ball name=BallA x=2 y=10 xVelocity=0 yVelocity=200
+
+# define a series of square bumpers
+squareBumper name=SquareA x=0 y=12
+squareBumper name=SquareB x=1 y=12
+squareBumper name=SquareC x=2 y=12
+squareBumper name=SquareD x=3 y=12
+squareBumper name=SquareE x=4 y=12
+
+squareBumper name=SquareF x=0 y=8
+squareBumper name=SquareG x=1 y=8
+squareBumper name=SquareH x=2 y=8
+squareBumper name=SquareI x=3 y=8
+squareBumper name=SquareJ x=4 y=8

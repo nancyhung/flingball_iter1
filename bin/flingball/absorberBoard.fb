@@ -1,0 +1,15 @@
+board name=absorberBoard gravity  =  10 friction1 =  0.01 friction2=0.02
+
+# define a ball
+ball name=Ball x=1.8 y=4.5 xVelocity=-3.4 yVelocity=-2.3 
+ball name=Ball2 x=2.8 y=4.5 xVelocity=-3.4 yVelocity=-2.3 
+ball name=Ball3 x=0.5 y=2 xVelocity=0 yVelocity=-5 
+
+# define some bumpers
+squareBumper name=Square x=0 y=10
+
+# define an absorber to catch the ball
+absorber name=Abs x=0 y=19 width=20 height=1 
+
+# define events between gadgets
+fire trigger=Square action=Abs

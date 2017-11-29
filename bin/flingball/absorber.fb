@@ -1,0 +1,28 @@
+board name=Absorber gravity = 25.0
+
+# define some balls
+ball name=BallA x=10.25 y=15.25 xVelocity=0 yVelocity=0
+ball name=BallB x=10 y=5.25 xVelocity=0 yVelocity=0
+ball name=BallC x=1.25 y=5.25 xVelocity=0 yVelocity=0
+
+
+# defining a triangle bumper
+# triangleBumper name=Tri x=19 y=0 orientation=90
+
+# defining some circle bumpers
+squareBumper name=CircleA x=1 y=10
+squareBumper name=CircleB x=2 y=10
+squareBumper name=CircleC x=3 y=10
+squareBumper name=CircleD x=4 y=10
+squareBumper name=CircleE x=5 y=10
+
+# define two absorbers that catch the balls
+# and shoot them up again when triggered
+absorber name=Abs1 x=0 y=18 width=20 height=2
+
+# the row of circles triggers absorber1 
+fire trigger=CircleA action=Abs1
+fire trigger=CircleB action=Abs1
+fire trigger=CircleC action=Abs1
+fire trigger=CircleD action=Abs1
+fire trigger=CircleE action=Abs1
